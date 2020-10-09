@@ -1,3 +1,5 @@
 (fp_lib_table
   (lib (name SofleKeyboard-footprint)(type KiCad)(uri /home/josef/projekty/keyboards/SofleKeyboard/SofleKeyboard-footprint.pretty)(options "")(descr ""))
+  (lib (name dane)(type KiCad)(uri "F:/Git/SofleKeyboard/Sofle RGB")(options "")(descr ""))
+  (lib (name SofleRGB)(type KiCad)(uri ${KIPRJMOD}/SofleRGB.pretty)(options "")(descr ""))
 )
