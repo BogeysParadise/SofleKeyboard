@@ -205,7 +205,6 @@ See the Sofle build guide.
 - [QMK Firmware][qmk_firmware]
 - [QMK Configurator][qmk_configurator]
 
-## Footnotes
 
 ## Firmware 
 
@@ -226,17 +225,15 @@ The default layout for the SofleRGB is in the qmk repo, and demonstrates some LE
 
 ![SofleRGBKeyboard PCB](../../Images/SofleRGB_boards.png)
 
-
+## Footnotes
 [layoutarticle]: <https://josef-adamcik.cz/electronics/in-search-of-the-best-custom-keyboard-layout.html> "In search of the best custom keyboard layout"
 [introductionarticle]: <https://josef-adamcik.cz/electronics/let-me-introduce-you-sofle-keyboard-split-keyboard-based-on-lily58.html> "Let me introduce you SofleKeyboard - a split keyboard based on Lily58 and Crkbd"
 [soflelayout]: http://www.keyboard-layout-editor.com/#/gists/76efb423a46cbbea75465cb468eef7ff "Sofle Keyboard layout at keyboard-layout-editor.com"
 [soflegerber]: https://github.com/josefadamcik/SofleKeyboard/releases "SofleKeyboard - gerber files"
 [qmk_firmware]: https://github.com/qmk/qmk_firmware/ "QMK firmware"
-{:target="_blank"}
+
 [qmk_configurator]: https://config.qmk.fm/#/sofle/rev1/LAYOUT "QMK configurator"
-{:target="_blank"}
 [springpinheader]: <https://yushakobo.jp/shop/a01mc-00/> "Spring pin headers - Japaneese"
-{:target="_blank"}
 [qmkprotonc]: https://qmk.fm/proton-c/ "QMK Proton-C"
 {:target="_blank"}
 [promicrosocketing]: <https://docs.splitkb.com/hc/en-us/articles/360011263059> "How do I socket a microcontroller? by splitkb.com"
