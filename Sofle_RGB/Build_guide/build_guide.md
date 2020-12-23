@@ -75,8 +75,18 @@ Work out what leds you wish to have, I have endeavoured to provide plenty of fle
 The traditional LED header is available, and can be used alone, or theoretically fed back in to one of the other headers if so desired. 
 
 Make sure you know which way around your leds are, different brands have different pin 1 positions. Thankfully it appears that the pad pattern underneath is consistent, so use it. I recommend doing one LED and testing it before continuing. This unfortunately suggests soldering the micro on first, despite it making the back side harder to solder. A good alternative would be to use an existing keyboard with leds to inject the signal and power through the LED header.
-![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
 
+![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
+The above picture from the crkbd guide shows pin 4 on the following table 
+| 1 | Dout | Vcc | 4 | 
+| 2 | Gnd  | Din | 3 | 
+
+
+![This version of the led has a different numbering pattern. But shows the same pattern on the bottom](./LED_datasheet.png)
+
+This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
+| 1 | Dout | Vcc | 4 | 
+| 2 | Gnd  | Din | 3 | 
 
 
 The surface mount LEDs are easier to solder, and there are only 1+6 of them on each side, so are a good place to start if you aren't used to soldering them. Use a fairly low temperature (240c) and lots of flux. Place the led in position, heat one of the pads on the board for several seconds before moving the iron to touch the pin on the led , then add solder. Moving the iron back and forth from the pin can help to flow the solder under the LED, 
