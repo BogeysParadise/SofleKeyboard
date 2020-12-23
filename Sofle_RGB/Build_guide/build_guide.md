@@ -81,10 +81,9 @@ Make sure you know which way around your leds are, different brands have differe
 ![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
 The above picture from the crkbd guide shows pin 4 on the following table, using the base pattern is the only way to be consistent. 
 
- ---
+|---|---|---|---|
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
----
 
 ![datasheet](./LED-datasheet.png)
 This version of the led has a different numbering pattern. But shows the same pattern on the bottom
