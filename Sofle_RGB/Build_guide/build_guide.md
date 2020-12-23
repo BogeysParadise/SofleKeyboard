@@ -68,7 +68,7 @@ The following is needed to build the keyboard.
 Make sure you know which side you are working on, and don't make two left hand sides by mistake 
 
 ### the LEDs
-![SofleKeyboard](./led_layout.jpg)
+![SofleKeyboard](./led-layout.jpg)
 
 
 Work out what leds you wish to have, I have endeavoured to provide plenty of flexibility, and all led configurations are available using the headers available. If you wish to experiment, use 2.54mm headers and jumpers. If you know what you want, use a solder bridge to enable the leds required.  
@@ -77,13 +77,14 @@ The traditional LED header is available, and can be used alone, or theoretically
 Make sure you know which way around your leds are, different brands have different pin 1 positions. Thankfully it appears that the pad pattern underneath is consistent, so use it. I recommend doing one LED and testing it before continuing. This unfortunately suggests soldering the micro on first, despite it making the back side harder to solder. A good alternative would be to use an existing keyboard with leds to inject the signal and power through the LED header.
 
 ![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
-The above picture from the crkbd guide shows pin 4 on the following table
+The above picture from the crkbd guide shows pin 4 on the following table, using the base pattern is the only way to be consistent. 
  
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
 
 
-![This version of the led has a different numbering pattern. But shows the same pattern on the bottom](./LED_datasheet.png)
+![](./LED_datasheet.png)
+This version of the led has a different numbering pattern. But shows the same pattern on the bottom
 
 This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
 
@@ -110,8 +111,6 @@ If you wish to use per key lighting, you also need to short pins 1-2 of 5.
 
 
 the per key lighting is painful and slow for these it is definitely best to do them in order, and test regularly. Use as low a temperature as you can manage, place the board flat on a table, and drop an led in. Create a solder bridge from the led to the board, not spending too much time with the iron on the led (few seconds) otherwise it will burn out. 
-![LED layout](./board-both.png)
-
 
 
 if the string stops working, resolder the last working one, and the first to fail, then if needed replace them. 
@@ -191,7 +190,7 @@ Suggested approach is to build the firmware yourself. You should be familiar wit
 - Connect one half to USB, flash the firmware: `make sofle:defaultRGB:avrdude` (you may need to use `sudo` depending on your setup). Use the reset button to reset the keyboard when you are asked to in console.
 - Connect the second half and flash it in the same way as the previous one.
 - Disconnect the USB cable. Connect both halves together with TRRS cable.
-- Connect USB cable to the **left** side[^2]. 
+- Connect USB cable to the **left** side. 
 - Enjoy SofleKeyboard!
 
 ## Troubleshooting
