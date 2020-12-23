@@ -68,7 +68,7 @@ The following is needed to build the keyboard.
 Make sure you know which side you are working on, and don't make two left hand sides by mistake 
 
 ### the LEDs
-![SofleKeyboard](./led layout.jpg)
+![SofleKeyboard](./led_layout.jpg)
 
 
 Work out what leds you wish to have, I have endeavoured to provide plenty of flexibility, and all led configurations are available using the headers available. If you wish to experiment, use 2.54mm headers and jumpers. If you know what you want, use a solder bridge to enable the leds required.  
@@ -77,7 +77,8 @@ The traditional LED header is available, and can be used alone, or theoretically
 Make sure you know which way around your leds are, different brands have different pin 1 positions. Thankfully it appears that the pad pattern underneath is consistent, so use it. I recommend doing one LED and testing it before continuing. This unfortunately suggests soldering the micro on first, despite it making the back side harder to solder. A good alternative would be to use an existing keyboard with leds to inject the signal and power through the LED header.
 
 ![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
-The above picture from the crkbd guide shows pin 4 on the following table 
+The above picture from the crkbd guide shows pin 4 on the following table
+ 
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
 
@@ -85,6 +86,7 @@ The above picture from the crkbd guide shows pin 4 on the following table
 ![This version of the led has a different numbering pattern. But shows the same pattern on the bottom](./LED_datasheet.png)
 
 This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
+
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
 
@@ -115,14 +117,17 @@ the per key lighting is painful and slow for these it is definitely best to do t
 if the string stops working, resolder the last working one, and the first to fail, then if needed replace them. 
 
 #### Layouts 
+Indicator + drop lighting
 ![LED layout underlighting](./board-underlighting.png)
+Indicator + per key lighting
 ![LED layout per key ](./board-perkey.png)
+Indicator + drop lighting + per key lighting
 ![LED layout both ](./board-both.png)
 
 
 ### Components on the backside
 
-Starting with the diodes. They belong to the backside of the PCB. Make sure you have orientation right - they are all oriented to the same side. The end with the thin line is Cathode (-) and it should go in the direction of the "arrow" symbol on the PCB.
+Start with the diodes. Make sure you have orientation right - they are all oriented to the same side. The end with the thin line is Cathode (-) and it should go in the direction of the "arrow" symbol on the PCB.
 
 Sockets for switches belong again on the back side, the same side as diodes. Make sure they are flush with PCB and match the orientation shown on the silkscreen. 
 
@@ -211,12 +216,12 @@ SofleRGB uses [QMK firmware](https://qmk.fm/), it can use any Sofle keymap.
 
 The default layout for the SofleRGB is in the qmk repo, and demonstrates some LED functions. 
 
-![Default layout for SofleRGB Keyboard](Images/soflekeyboard.png)
+![Default layout for SofleRGB Keyboard](../../../Images/soflekeyboard.png)
 
 ## Images of keyboard
 
-![SofleRGBKeyboard](Images/SofleRGB_1.png)
+![SofleRGBKeyboard](../../../Images/SofleRGB_1.png)
 
-![SofleRGBKeyboard](Images/SofleRGB_2.png)
+![SofleRGBKeyboard](../../../Images/SofleRGB_2.png)
 
-![SofleRGBKeyboard PCB](Images/SofleRGB_boards.png)
+![SofleRGBKeyboard PCB](../../../Images/SofleRGB_boards.png)
