@@ -216,12 +216,12 @@ SofleRGB uses [QMK firmware](https://qmk.fm/), it can use any Sofle keymap.
 
 The default layout for the SofleRGB is in the qmk repo, and demonstrates some LED functions. 
 
-![Default layout for SofleRGB Keyboard](../../../Images/soflekeyboard.png)
+![Default layout for SofleRGB Keyboard](../../Images/soflekeyboard.png)
 
 ## Images of keyboard
 
-![SofleRGBKeyboard](../../../Images/SofleRGB_1.png)
+![SofleRGBKeyboard](../../Images/SofleRGB_1.png)
 
-![SofleRGBKeyboard](../../../Images/SofleRGB_2.png)
+![SofleRGBKeyboard](../../Images/SofleRGB_2.png)
 
-![SofleRGBKeyboard PCB](../../../Images/SofleRGB_boards.png)
+![SofleRGBKeyboard PCB](../../Images/SofleRGB_boards.png)
