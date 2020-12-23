@@ -90,12 +90,11 @@ The above picture from the crkbd guide shows pin 4 on the following table, using
 This version of the led has a different numbering pattern. But shows the same pattern on the bottom
 
 This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
-
-
+| pin | net | net | pin |
 ---
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
----
+
 
 The surface mount LEDs are easier to solder, and there are only 1+6 of them on each side, so are a good place to start if you aren't used to soldering them. Use a fairly low temperature (240c) and lots of flux. Place the led in position, heat one of the pads on the board for several seconds before moving the iron to touch the pin on the led , then add solder. Moving the iron back and forth from the pin can help to flow the solder under the LED, 
 
