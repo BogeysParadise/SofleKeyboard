@@ -91,7 +91,7 @@ This version of the led has a different numbering pattern. But shows the same pa
 
 This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
 | pin | net | net | pin |
----
+|---|---|---|---|
 | 1 | Dout | Vcc | 4 | 
 | 2 | Gnd  | Din | 3 | 
 
