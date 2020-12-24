@@ -39,10 +39,10 @@ The following is needed to build the keyboard.
 **Optional**
 - **OLED/s**
 	- **2 ssd1306 128x32 OLED display module**. Very common everywhere. 
-	- **2 4 pin header (and optionally socket)** for OLEDs. I have used the most common 1x4 female pin sockets which are quite tall but they also fit the height of ProMicro with the sockets I have used. Unfortunately, the pin headers on my OLED modules (again those very common square male headers you would get with the modules) are loose in the sockets. It works but it's fiddly. I'll have to find a better solution.
+	- **2x 4 pin header (and optionally socket)** for OLEDs. I have used the most common 1x4 female pin sockets which are quite tall but they also fit the height of ProMicro with the sockets I have used. Unfortunately, the pin headers on my OLED modules (again those very common square male headers you would get with the modules) are loose in the sockets. It works but it's fiddly. I'll have to find a better solution.
 	- **2 OLED cover** This is available in [../../Case/Sofle_RGB/oled_cover.svg ](../../Case/Sofle_RGB/oled_cover.svg )
 	
--**Rotary encoders**
+- **Rotary encoders**
 	- **2 Rotary encoders EC11**, If you are not sure take EC11E. Some other variants (EC11K) may have some additional plastic pins for and require mounting holes for them (which are not included on the PCB).
 	- **A matching knob** for each encoder. 
 	
@@ -78,8 +78,13 @@ The traditional LED header is available, and can be used alone, or theoretically
 
 Make sure you know which way around your leds are, different brands have different pin 1 positions. Thankfully it appears that the pad pattern underneath is consistent, so use it. I recommend doing one LED and testing it before continuing. This unfortunately suggests soldering the micro on first, despite it making the back side harder to solder. A good alternative would be to use an existing keyboard with leds to inject the signal and power through the LED header.
 
+#### LED pinouts
+
 ![LED pinout from the crkbd build guide. I've found this to be the only consistent method](./led-pinout.jpg)
-The above picture from the crkbd guide shows pin 4 on the following table, using the base pattern is the only way to be consistent. 
+
+The above picture is from the crkbd guide shows pin 4 on the following table (the table is viewed from the top of the LED). 
+
+Using the base pattern is the only consistent pattern between at least two different models with different pin 1 definitions and markings.
 
 | pin | net | net | pin |
 |---|---|---|---|
@@ -87,9 +92,9 @@ The above picture from the crkbd guide shows pin 4 on the following table, using
 | 2 | Gnd  | Din | 3 | 
 
 ![datasheet](./LED-datasheet.png)
-This version of the led has a different numbering pattern. But shows the same pattern on the bottom
+This version of the led has a different numbering pattern. But shows the same pattern and net lables on the bottom.
 
-This version of the sofle uses the following table, with the silkscreen marking at pin 1 (Dout) 
+The sofle RGB uses the following table, with the silkscreen marking at pin 1 (Dout) 
 | pin | net | net | pin |
 |---|---|---|---|
 | 1 | Dout | Vcc | 4 | 
@@ -114,12 +119,12 @@ If you wish to use per key lighting, you also need to short pins 1-2 of 5.
 |	N 		|	Y 			|   Y 		|  2-3	| 	1-2	| 1-2 	| 	
 
 
-the per key lighting is painful and slow for these it is definitely best to do them in order, and test regularly. Use as low a temperature as you can manage, place the board flat on a table, and drop an led in. Create a solder bridge from the led to the board, not spending too much time with the iron on the led (few seconds) otherwise it will burn out. 
+The per key lighting is painful and slow. For these it is definitely best to do them in order, and test regularly. Use as low a temperature as you can manage, place the board flat on a table, and drop an led in. Create a solder bridge from the led to the board, not spending too much time with the iron on the led (few seconds) otherwise it will burn out. 
 
 
-if the string stops working, resolder the last working one, and the first to fail, then if needed replace them. 
+If the part of the string stops working, resolder the last working one, and the first to fail, then if needed replace them. 
 
-#### Layouts 
+#### LED Layouts 
 Indicator + drop lighting
 ![LED layout underlighting](./board-underlighting.png)
 Indicator + per key lighting
@@ -145,36 +150,38 @@ Button and TRRS sockets belong to the top. Use a piece of tape to fix them and a
 
 ### Pro Micro and displays
 
-The pro micro must be installed with the components facing the pcb, and the plain back side facing out. Theoretically I think these could be installed on the under side for a lower profile. 
+- The pro micro must be installed with the components facing the pcb, and the plain back side facing out. Theoretically I think these could be installed on the under side for a lower profile. 
 
-make sure that you use the outlined headers from whichever side of the board that you mount the micro on. 
+Make sure that you use the outlined headers from whichever side of the board that you mount the micro on. 
+
+- Install the oled so it sits over the pro micro 
 
 
 
 ### Rotary encoders
 
-Add rotary encoders last, they are big, and make soldering harder 
+- Add rotary encoders last, they are big, and make soldering harder 
 
 
 ### Keyboard switches and plates
 
-Mount the stand-offs to the top plate.
+- Mount the stand-offs to the top plate.
 
-Snap first switches into corners of the plate.
+- Snap first switches into corners of the plate.
 
-Carefully snap the first switches to the sockets. Be careful so you don't bend their contacts.
+- Carefully snap the first switches to the sockets. Be careful so you don't bend their contacts.
 
-Add the rest of the switches
+- Add the rest of the switches
 
-Mount the bottom plate.
+- Mount the bottom plate.
 
 ### Finishing touches
 
-install the rotary encoder knob.
+- Install the rotary encoder knob.
 
-optionally add oled covers
+- Optionally add oled covers
 
-Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
+- Put at least 4 adhesive rubber feet in the corners so the keyboard is not moving when you type.
 
 
 ## Warnings and disclaimers
