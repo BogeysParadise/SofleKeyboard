@@ -40,7 +40,7 @@ The following is needed to build the keyboard.
 - **OLED/s**
 	- **2 ssd1306 128x32 OLED display module**. Very common everywhere. 
 	- **2 4 pin header (and optionally socket)** for OLEDs. I have used the most common 1x4 female pin sockets which are quite tall but they also fit the height of ProMicro with the sockets I have used. Unfortunately, the pin headers on my OLED modules (again those very common square male headers you would get with the modules) are loose in the sockets. It works but it's fiddly. I'll have to find a better solution.
-	- **2 OLED cover** This is available in ![SofleKeyboard\Case\Sofle_RGB\oled_cover.svg ](../../Case/Sofle_RGB/oled_cover.svg )
+	- **2 OLED cover** This is available in [../../Case/Sofle_RGB/oled_cover.svg ](../../Case/Sofle_RGB/oled_cover.svg )
 	
 -**Rotary encoders**
 	- **2 Rotary encoders EC11**, If you are not sure take EC11E. Some other variants (EC11K) may have some additional plastic pins for and require mounting holes for them (which are not included on the PCB).
