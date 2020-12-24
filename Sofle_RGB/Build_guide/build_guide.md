@@ -108,14 +108,14 @@ I have added a single LED to the top surface to act as a layer indicator, this i
 To enable drop lighting, short pins 1-2 of J4(Light select), to enable only per key lighting short pins 2-3 of J4. 
 If you wish to use per key lighting, you also need to short pins 1-2 of 5. 
 
-| indicator | drop lighting | per key 	| j6 	| j4 	|j5 	| 
+| Indicator | Drop lighting | Per key 	| j6 	| j4 	|j5 	| 
 | ---		| ---			| ---		| --- 	| ---  	| --- 	| 
-| Y			|  N			|   N		| 1-2	|	?	| ?		| 
-|	Y		|  Y			|	N		|	1-2	|	1-2 | ?		|
+| Y			|  N			|   N		| 1-2	|		| 		| 
+|	Y		|  Y			|	N		|	1-2	|	1-2 | 		|
 |	Y		|	Y			|	Y		|	1-2 |  1-2	| 1-2	|
 |	Y		|	N			|	Y 		| 	1-2 |	2-3 | 1-2	|
 |	N		|   N			|   Y 		|  2-3	|   2-3 | 1-2   | 
-|   N		|   Y			| 	N 		|  2-3	|   1-2 | ?		|
+|   N		|   Y			| 	N 		|  2-3	|   1-2 | 		|
 |	N 		|	Y 			|   Y 		|  2-3	| 	1-2	| 1-2 	| 	
 
 
@@ -135,9 +135,9 @@ Indicator + drop lighting + per key lighting
 
 ### Components on the backside
 
-Start with the diodes. Make sure you have orientation right - they are all oriented to the same side. The end with the thin line is Cathode (-) and it should go in the direction of the "arrow" symbol on the PCB.
+- Start with the diodes. Make sure you have orientation right - they are all oriented to the same side. The end with the thin line is Cathode (-) and it should go in the direction of the "arrow" symbol on the PCB.
 
-Sockets for switches belong again on the back side, the same side as diodes. Make sure they are flush with PCB and match the orientation shown on the silkscreen. 
+- Sockets for switches belong again on the back side, the same side as diodes. Make sure they are flush with PCB and match the orientation shown on the silkscreen. 
 
 ### Bridge the oled pads
 This is done on the top side, all 4 solder bridges must be completed. This is easier before the pro micro headers are soldered 
@@ -145,7 +145,7 @@ This is done on the top side, all 4 solder bridges must be completed. This is ea
 
 ### Components on the front side
 
-Button and TRRS sockets belong to the top. Use a piece of tape to fix them and apply solder from the bottom side.
+- Button and TRRS sockets belong to the top. Use a piece of tape to fix them and apply solder from the bottom side.
 
 
 ### Pro Micro and displays
